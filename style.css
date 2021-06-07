@@ -1,0 +1,503 @@
+/* Basic Setup */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+}
+a{
+    text-decoration: none;
+}
+
+/* Reuseable Components */
+
+.row{
+    max-width: 1310px;
+    margin: 0 auto;
+}
+button{
+    cursor: pointer;
+}
+
+/* Header Section Starts */
+
+header{
+    height: 85vh;
+    background-image: url(Assests/Images/hero-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px 0;
+}
+.logo{
+    width: 180px;
+    height: 38px;
+    float: left;
+}
+.logo .logo-img{
+    width: 100%;
+    height: 100%;
+}
+.express-delivery{
+    width: 310px;
+    height: auto;
+    float: right;
+}
+.express-delivery .delivery{
+    width: 35px;
+    height: auto;
+    margin-right: 2px;
+}
+.express-delivery .delivery-number{
+    font-size: 16px;
+    font-weight: bold;
+    float: right;
+    margin-top: 5px;
+    color: #3d2514;
+    cursor: context-menu;
+}
+.main-nav{
+    float: right;
+    clear: both;
+}
+.main-nav li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav li:first-child{
+    margin-left: 0;
+}
+.main-nav li a{
+    color: #3d2514;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 3px;
+}
+.hero-title-content{
+    width: 50%;
+    height: 70vh;
+    float: left;
+}
+.hero-title-content .hero-title{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.hero-title .small-title{
+    font-size: 23px;
+    font-family: 'Bebas Neue', cursive;
+    padding: 5px 10px;
+    border: 2px dashed #3d2514;
+}
+.hero-title h1{
+    font-size: 114px;
+    font-family: 'Alfa Slab One', cursive;
+    text-transform: uppercase;
+    color: #3d2514;
+    text-shadow: 2px 4px 1px #fff;
+}
+.hero-title .main-hero-small-title{
+    text-transform: uppercase;
+    font-size: 56px;
+    font-family: 'Alfa Slab One', cursive;
+    color: #3d2514;
+    text-shadow: 2px 4px 1px #fff;
+}
+.hero-image{
+    width: 50%;
+    height: 70vh;
+    float: right;
+}
+.hero-image .hero-main-img{
+    width: 600px;
+    height: 495px;
+}
+
+/* Header Section Ends */
+
+/* Today New Barger Section Starts */
+
+.today-new-burger{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.new-burger-items-layout{
+    width: 95%;
+    height: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-gap: 55px 40px;
+}
+.new-burger-items-layout .chili-burger{
+    margin-top: 30px;
+}
+.burger1{
+    position: relative;
+}
+.burger1::after{
+    content: "Try It Today";
+    background: #000;
+    width: 100%;
+    height: 99%;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.burger1:hover::after{
+    opacity: 0.5;
+}
+.burger2 .more-fun-burger{
+    position: relative;
+}
+.burger2 .more-fun-burger::after{
+    content: "Try It Today";
+    background: #000;
+    width: 100%;
+    height: 99%;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.burger2 .more-fun-burger:hover::after{
+    opacity: 0.5;
+}
+.button-section{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+.button-section button{
+    width: 230px;
+    height: 40px;
+    border: none;
+    margin-top: 50px;
+}
+.button-section .button1{
+    font-size: 25px;
+    font-family: 'Bebas Neue', cursive;
+    color: #3d2514;
+    background: #ffc045;
+    cursor: pointer;
+}
+.button-section .button1:hover{
+    background: #3d2514;
+    color: #ffc045;
+}
+
+/* Today New Barger Section Ends */
+
+/* Choose & Enjoy Section Starts */
+
+.choose-and-enjoy{
+    width: 100%;
+    height: 100vh;
+}
+.choose-and-enjoy-header{
+    width: 80%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+.choose-and-enjoy-header h2{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 50px;
+    color: #3d2514;
+    text-transform: uppercase;
+}
+.choose-and-enjoy-header p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #3d2514;
+}
+.card-section{
+    width: 100%;
+    height: 550px;
+    margin-top: 30px;
+}
+.card-section .card-container{
+    width: 100%;
+    height: 450px;
+}
+.card-section .card-container .card{
+    width: 32.55%;
+    height: 480px;
+    float: left;
+    margin: 5px;
+    border-radius: 5px;
+}
+.card-container .card:hover{
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.card-container .card .card-content{
+    text-align: center;
+}
+.card-container .card .card-content img{
+    width: 330px;
+    height: 280px;
+    padding: 10px 15px;
+}
+.card-content .card-header{
+    width: 100%;
+    height: auto;
+}
+.card-content .card-header h3{
+    font-size: 37px;
+    font-family: 'Bebas Neue', cursive;
+    color: #3d2514;
+}
+.card-content .card-desc {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+}
+.card-content .card-button{
+    margin-top: 30px;
+}
+.card-content .card-button button{
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    background: #bf2222;
+    color: #fff;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 16px;
+}
+
+/* Choose & Enjoy Section Ends */
+
+/* Event Section Starts */
+
+.event{
+    width: 100%;
+    height: 70vh;
+}
+.event-container{
+    width: 90%;
+    height: 390px;
+    margin: auto;
+    margin-top: 20px;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+}
+.event-container .event-title{
+    width: 50%;
+    height: 250px;
+    margin-top: 100px;
+    float: left;
+    padding-left: 10px;
+}
+.event-container .event-title span{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 29px;
+    color: #3d2514;
+}
+.event-container .event-title .event-header{
+    font-size: 41px;
+    font-family: 'Alfa Slab One', cursive;
+    color: #3d2514;
+    text-transform: uppercase;
+}
+.event-container .event-title .event-desc{
+    color: #3d2514;
+    font-size: 20px;
+    line-height: 30px;
+}
+.event-container .event-image{
+    width: 50%;
+    height: 250px;
+    float: right;
+    padding-right: 10px;
+}
+.event-container .event-image img{
+    width: 550px;
+    height: 350px;
+    float: right;
+    margin-top: 20px;
+}
+
+/* Event Section Ends */
+
+/* Reservation Section Starts */
+
+.reservation-section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.reservation-header{
+    width: 100%;
+    text-align: center;
+}
+.reservation-header .reservation-title{
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    color: #3d2514;
+}
+.reservation-header .reservation-header-title{
+    font-size: 50px;
+    font-family: 'Alfa Slab One', cursive;
+    text-transform: uppercase;
+    color: #3d2514;
+}
+.reservation-section .reservation-table-section{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reservation-section .reservation-table-section input,
+button{
+    width: 260px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #DEDEDE;
+}
+.reservation-section .reservation-table-section button{
+    background: #bf2222;
+    font-family: 'Alfa Slab One', cursive;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.reservation-section .reservation-table-section input::placeholder{
+    color: #3d2514;
+    padding: 0 10px;
+}
+.reservation-section .reservation-img .table-image{
+    position: absolute;
+    width: 300px;
+}
+.reservation-section .reservation-img .table-burger{
+    top: 45%;
+    right: 0;
+}
+.reservation-section .reservation-img .table-burger1{
+    top: 2%;
+}
+.reservation-section .reservation-img .table-bottle{
+    top: 28%;
+    left: 15%;
+}
+
+/* Reservation Section Ends */
+
+/* Footer Section Starts */
+
+.footer-section{
+    width: 100%;
+    height: 80vh;
+    background-image: url('Assests/Images/bottom-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+}
+.footer-section .footer-main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+.footer-main .footer-logo{
+    width: 50%;
+    height: 60vh;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.footer-main .footer-logo img{
+    padding: 30px;
+}
+.footer-main .info-section{
+    width: 50%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.info-section .location.loc{
+    width: 20px;
+}
+.footer-main .info-section .location p,
+.email-sec p{
+    width: 280px;
+    text-align: right;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    display: inline;
+}
+.copyright-section{
+    width: 100%;
+    margin-top: 30px;
+    color: #fff;
+}
+.copyright-section .copyright-title{
+    float: left;
+}
+.copyright-section .footer-nav{
+    float: right;
+}
+.copyright-section .footer-nav li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.copyright-section .footer-nav li:last-child{
+    margin-right: 0;
+}
+.copyright-section .footer-nav li a{
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+}
+.copyright-section .footer-nav li a:hover{
+    transform: translateY(-10px);
+}
+
+/* Footer Section Ends */

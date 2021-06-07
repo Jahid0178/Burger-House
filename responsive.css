@@ -1,0 +1,8 @@
+@media screen and (max-width: 1090px){
+    .row{
+        max-width: 0;
+    }
+    header{
+        width: 100%;
+    }
+}
